@@ -43,31 +43,37 @@ fn main (){
   }
 
   // ビンゴしているかどうかチェック
+  let mut is_bingo = false;
   for i in 0..vec.len() {
     if vec[0] == 999 && vec[3] == 999 && vec[6] == 999 {
-      println!("Yes");
+      is_bingo = true;
       break;
     } else if vec[1] == 999 && vec[4] == 999 && vec[7] == 999 {
-      println!("Yes");
+      is_bingo = true;
       break;
     } else if vec[2] == 999 && vec[5] == 999 && vec[8] == 999 {
-      println!("Yes");
+      is_bingo = true;
       break;
     } else if vec[0] == 999 && vec[1] == 999 && vec[2] == 999 {
-      println!("Yes");
+      is_bingo = true;
       break;
     } else if vec[3] == 999 && vec[4] == 999 && vec[5] == 999 {
-      println!("Yes");
+      is_bingo = true;
       break;
     } else if vec[6] == 999 && vec[7] == 999 && vec[8] == 999 {
-      println!("Yes");
+      is_bingo = true;
       break;
     } else if vec[0] == 999 && vec[4] == 999 && vec[8] == 999 {
-      println!("Yes");
+      is_bingo = true;
       break;
     } else if vec[2] == 999 && vec[4] == 999 && vec[6] == 999 {
-      println!("Yes");
+      is_bingo = true;
       break;
-    }
+    } 
+  }
+  if is_bingo {
+    println!("YES");
+  } else {
+    println!("NO");
   }
 }
