@@ -9,6 +9,7 @@ fn main (){
 
   let mut vec: Vec<i32> = Vec::new();
 
+  // 3 x 3 の数字の入力を受付け、ベクタに変換
   for i in 0..3 {
     // 入力した数字を文字列として取得
     let mut num_vec = String::new();
@@ -26,6 +27,7 @@ fn main (){
     }
   }
 
+  // 8個まで数字を受け付け、先ほどのベクタの数字に一致するか判定する
   let times :i32 = 8;
 
   for i in 0..times {
